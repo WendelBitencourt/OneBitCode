@@ -15,5 +15,5 @@ alert(
     "\nMultiplicação: " +
     multiplicacao +
     "\nDivisão: " +
-    divisao
+    divisao,
 );

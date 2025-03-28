@@ -12,5 +12,5 @@ alert(
     "\nCampo de estudo: " +
     campoDeEstudo +
     "\nIdade: " +
-    (2022 - anoDeNascimento)
+    (2022 - anoDeNascimento),
 );
