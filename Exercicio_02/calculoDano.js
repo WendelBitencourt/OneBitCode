@@ -22,3 +22,37 @@ if (poderAtaque > defesaPersonagem && escudo === false) {
 } else {
   dano = 0;
 }
+
+let vidaFinal = vidaPersonagem - dano;
+
+if (escudo === true) {
+  console.log(
+    "O personagem " +
+      nomePersonagem1 +
+      " causou " +
+      dano +
+      " de dano no personagem " +
+      nomePersonagem2 +
+      " que tinha " +
+      vidaPersonagem +
+      " e agora ele tem " +
+      vidaFinal +
+      " de vida restante. O personagem " +
+      nomePersonagem2 +
+      " estava com escudo."
+  );
+} else {
+  console.log(
+    "O personagem " +
+      nomePersonagem1 +
+      " causou " +
+      dano +
+      " de dano no personagem " +
+      nomePersonagem2 +
+      " que tinha " +
+      vidaPersonagem +
+      " e agora ele tem " +
+      vidaFinal +
+      " de vida restante."
+  );
+}
