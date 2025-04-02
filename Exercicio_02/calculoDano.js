@@ -1,8 +1,8 @@
 const nomePersonagem1 = prompt(
-  "Digite o nome do personagem quue realizará o ataque: "
+  "Digite o nome do personagem que realizará o ataque: "
 );
 let poderAtaque = Number(
-  prompt("Digite o poder de ataque do personagem " + nomePersonagem1 + ":")
+  prompt(`Digite o poder de ataque do personagem ${nomePersonagem1}:`)
 );
 
 const nomePersonagem2 = prompt("Digite o nome do segundo personagem: ");
@@ -15,44 +15,16 @@ let escudo =
 
 let dano = 0;
 
-if (poderAtaque > defesaPersonagem && escudo === false) {
-  dano = poderAtaque - defesaPersonagem;
-} else if (poderAtaque > defesaPersonagem && escudo === true) {
-  dano = (poderAtaque - defesaPersonagem) / 2;
-} else {
-  dano = 0;
+if (poderAtaque > defesaPersonagem) {
+  dano = escudo
+    ? (poderAtaque - defesaPersonagem) / 2
+    : poderAtaque - defesaPersonagem;
 }
 
 let vidaFinal = vidaPersonagem - dano;
 
-if (escudo === true) {
-  console.log(
-    "O personagem " +
-      nomePersonagem1 +
-      " causou " +
-      dano +
-      " de dano no personagem " +
-      nomePersonagem2 +
-      " que tinha " +
-      vidaPersonagem +
-      " e agora ele tem " +
-      vidaFinal +
-      " de vida restante. O personagem " +
-      nomePersonagem2 +
-      " estava com escudo."
-  );
-} else {
-  console.log(
-    "O personagem " +
-      nomePersonagem1 +
-      " causou " +
-      dano +
-      " de dano no personagem " +
-      nomePersonagem2 +
-      " que tinha " +
-      vidaPersonagem +
-      " e agora ele tem " +
-      vidaFinal +
-      " de vida restante."
-  );
-}
+console.log(
+  `O personagem ${nomePersonagem1} causou ${dano} de dano no personagem ${nomePersonagem2}, que tinha ${vidaPersonagem} de vida e agora tem ${vidaFinal} de vida restante.${
+    escudo ? " O personagem estava com escudo." : ""
+  }`
+);
