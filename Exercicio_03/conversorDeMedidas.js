@@ -53,5 +53,4 @@ switch (unidade) {
     break;
   default:
     console.log("Opção inválida. Por favor, escolha uma unidade válida.");
-    break;
 }
