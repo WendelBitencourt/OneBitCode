@@ -22,5 +22,5 @@ while (visitouCidade === "Sim" || visitouCidade === "sim") {
 console.log(
   `Turista: ${nomeTurista}
   \nQuantidade de cidades: ${contagemCidade}
-  \nCidades Visitadas:\n${cidades} `
+  \nCidades Visitadas:\n${cidades} `,
 );
