@@ -16,39 +16,39 @@
 let valorEmMetros = parseFloat(prompt("Digite o valor em metros:"));
 let unidade = parseFloat(
   prompt(
-    "Escolha a unidade para conversão:\n1. milímetro (mm)\n2. centímetro (cm)\n3. decímetro (dm)\n4. decâmetro (dam)\n5. hectômetro (hm)\n6. quilômetro (km)\nDigite o número correspondente à unidade desejada:"
-  )
+    "Escolha a unidade para conversão:\n1. milímetro (mm)\n2. centímetro (cm)\n3. decímetro (dm)\n4. decâmetro (dam)\n5. hectômetro (hm)\n6. quilômetro (km)\nDigite o número correspondente à unidade desejada:",
+  ),
 );
 
 switch (unidade) {
   case 1:
     console.log(
-      `${valorEmMetros} metros é igual a ${valorEmMetros * 1000} milímetros.`
+      `${valorEmMetros} metros é igual a ${valorEmMetros * 1000} milímetros.`,
     );
     break;
   case 2:
     console.log(
-      `${valorEmMetros} metros é igual a ${valorEmMetros * 100} centímetros.`
+      `${valorEmMetros} metros é igual a ${valorEmMetros * 100} centímetros.`,
     );
     break;
   case 3:
     console.log(
-      `${valorEmMetros} metros é igual a ${valorEmMetros * 10} decímetros.`
+      `${valorEmMetros} metros é igual a ${valorEmMetros * 10} decímetros.`,
     );
     break;
   case 4:
     console.log(
-      `${valorEmMetros} metros é igual a ${valorEmMetros / 10} decâmetros.`
+      `${valorEmMetros} metros é igual a ${valorEmMetros / 10} decâmetros.`,
     );
     break;
   case 5:
     console.log(
-      `${valorEmMetros} metros é igual a ${valorEmMetros / 100} hectômetros.`
+      `${valorEmMetros} metros é igual a ${valorEmMetros / 100} hectômetros.`,
     );
     break;
   case 6:
     console.log(
-      `${valorEmMetros} metros é igual a ${valorEmMetros / 1000} quilômetros.`
+      `${valorEmMetros} metros é igual a ${valorEmMetros / 1000} quilômetros.`,
     );
     break;
   default:
