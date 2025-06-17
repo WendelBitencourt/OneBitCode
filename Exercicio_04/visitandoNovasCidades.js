@@ -15,7 +15,8 @@ let contagemCidade = 0;
 while (
   visitouCidade === "Sim" ||
   visitouCidade === "sim" ||
-  visitouCidade === "s"
+  visitouCidade === "s" ||
+  visitouCidade === "S"
 ) {
   nomeCidade = prompt("Digite o nome da cidade visitada: ");
   cidades += ` - ${nomeCidade} \n`;
