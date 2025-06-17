@@ -11,4 +11,25 @@ do {
   console.log("Sair: Digite 5");
 
   opcao = prompt("Digite a sua opção: ");
+
+  switch (opcao) {
+    case "1":
+      console.log("Opção 1 escolhida");
+      break;
+    case "2":
+      console.log("Opção 2 escolhida");
+      break;
+    case "3":
+      console.log("Opção 3 escolhida");
+      break;
+    case "4":
+      console.log("Opção 4 escolhida");
+      break;
+    case "5":
+      console.log("Encerrando o sistema...");
+      break;
+    default:
+      console.log("Opção inválida");
+      break;
+  }
 } while (opcao != 5);
