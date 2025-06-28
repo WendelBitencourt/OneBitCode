@@ -6,26 +6,24 @@
 // e então continue perguntando se o turista visitou alguma outra cidade até que a resposta seja não.
 // No fim, o programa deve exibir o nome do turista, quantas e quais cidades ele visitou.
 
-let nomeTurista = prompt("Qual é o seu nome?: ");
-let visitouCidade = prompt("Você já visitou alguma cidade?: ");
-let nomeCidade = "";
+let nomeTurista = prompt("Qual é o seu nome?");
+let visitouCidade = prompt("Você já visitou alguma cidade? (sim/não)");
 let cidades = "";
 let contagemCidade = 0;
 
 while (
-  visitouCidade === "Sim" ||
-  visitouCidade === "sim" ||
-  visitouCidade === "s" ||
-  visitouCidade === "S"
+  visitouCidade.toLowerCase() === "sim" ||
+  visitouCidade.toLowerCase() === "s"
 ) {
-  nomeCidade = prompt("Digite o nome da cidade visitada: ");
-  cidades += ` - ${nomeCidade} \n`;
+  let nomeCidade = prompt("Digite o nome da cidade visitada:");
+  cidades += ` - ${nomeCidade}\n`;
   contagemCidade++;
-  visitouCidade = prompt("Você já visitou alguma cidade?: ");
+  visitouCidade = prompt("Você visitou alguma outra cidade? (sim/não)");
 }
 
 console.log(
   `Turista: ${nomeTurista}
-  \nQuantidade de cidades: ${contagemCidade}
-  \nCidades Visitadas:\n${cidades} `,
+Quantidade de cidades: ${contagemCidade}
+Cidades visitadas:
+${cidades}`,
 );
