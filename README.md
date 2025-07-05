@@ -9,5 +9,3 @@ Repositório de exercícios do curso full stack javacript da plataforma OneBitCo
 - HTML
 - CSS
 - JavaScript
-- Node.js
-- React
