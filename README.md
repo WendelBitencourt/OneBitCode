@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Repositório de exercícios javacript da plataforma OneBitCode
+Repositório de exercícios javacript da plataforma OneBitCode.
 
 ## Tecnologias
 
