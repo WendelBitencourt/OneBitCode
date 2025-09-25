@@ -16,5 +16,3 @@ if (palavra === palavraInvertida) {
     `A palavra ${palavra} não é um palíndromo. Ela lida de trás para frente é ${palavraInvertida}.`,
   );
 }
-
-//teste
