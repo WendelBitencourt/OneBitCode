@@ -42,3 +42,4 @@ if (palavra === palavraInvertida) {
 }
 
 //teste
+//teste
