@@ -40,3 +40,5 @@ if (palavra === palavraInvertida) {
     )}.`,
   );
 }
+
+//teste
